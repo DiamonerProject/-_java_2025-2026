@@ -34,18 +34,19 @@ Secure File Transfer (Client–Server)
 Структура проекта
 
 src/
-├── client/
-│ ├── ClientGUI.java // Графический интерфейс клиента
-│ └── FileSender.java // Шифрование, подпись и отправка файла
-│
-├── server/
-│ ├── ServerGUI.java // Графический интерфейс сервера
-│ └── FileReceiver.java // Прием, расшифрование и проверка подписи
-│
-└── common/
-├── CryptoUtils.java // Криптографические операции
-├── Protocol.java // Формат передаваемых данных
-└── SecurityConfig.java // Настройки алгоритмов
+
+client/
+ClientGUI.java // Графический интерфейс клиента
+FileSender.java // Шифрование, подпись и отправка файла
+
+server/
+ServerGUI.java // Графический интерфейс сервера
+FileReceiver.java // Прием, расшифрование и проверка подписи
+
+common/
+CryptoUtils.java // Криптографические операции
+Protocol.java // Формат передаваемых данных
+SecurityConfig.java // Настройки алгоритмов
 
 ---
 
